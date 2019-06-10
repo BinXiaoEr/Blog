@@ -81,14 +81,23 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+     'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME':'mysite_db',#使用的数据库的名字
+        'USER':'scb',#链接mysql的用户名
+        'PASSWORD':'scb123456',#远程数据设置你这个ip地址允许访问的密码
+        'HOST':'localhost',#指定mysql数据库所在电脑ip
+        'PORT':3306,#电脑端口),
     }
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
