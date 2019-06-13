@@ -1,0 +1,16 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Jun 11 20:36:21 2019] ***
+compiled with version: 7.3.0 on 11 June 2019 11:12:59
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: iZuf6hi23fn35qx0g0ou6sZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/Blog/mysite-test-final
+writing pidfile to master.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+setgid() to 2000
+setuid() to 1000
+chdir() to /root/Blog/mysite-test-final
+chdir(): Permission denied [core/uwsgi.c line 2623]
