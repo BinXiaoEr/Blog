@@ -12,15 +12,6 @@ each_page_blogs_number = 6
 
 # 获取分页信息
 def get_blog_list_common_date(request, blogs_all_list):
-      # for blog in blogs_all_list:
-    #     blog.content = markdown.markdown(blog.content.replace("\r\n", '  \n'), extensions=[
-    #         'markdown.extensions.extra',
-    #         'markdown.extensions.codehilite',
-    #         'markdown.extensions.toc',
-    #     ],safe_mode=True,enable_attributes=False)
-    #设置当前文本内容为markdown
-    # 每 each_page_blogs_number页进行分页 对model对象进行分页  
-    #设置当前文本内容为markdown
     # 每 each_page_blogs_number页进行分页 对model对象进行分页
     paginator = Paginator(blogs_all_list, each_page_blogs_number)
     # 获取页码参数get请求page=?,后面的1是默认
@@ -43,11 +34,14 @@ def get_blog_list_common_date(request, blogs_all_list):
     # 获取博客分类的对应博客数量
     blog_type_list = BlogType.objects.annotate(blog_count=Count('blog'))
     # 获取日期归档对应的博客数量
-    blog_dates = Blog.objects.dates('create_time', 'month', order='ASC')
+    blog_dates = Blog.objects.dates('create_time', 'month', order='DESC')
     #存放按月统计的博客数量
     blog_date_dict = {}
+
     for blog_date in blog_dates:
+
         blog_count = Blog.objects.filter(create_time__year=blog_date.year, create_time__month=blog_date.month).count()
+        print(blog_count)
         blog_date_dict[blog_date] = blog_count
     context = {}
     # 导航栏列表博客类型

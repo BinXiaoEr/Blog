@@ -97,7 +97,7 @@
                                      onclick="likeChange(this,'{% get_content_type comment %}',{{ comment.pk }})">
                                         <span class="glyphicon glyphicon-thumbs-up {% get_like_status comment %}">
                                         <span class="liked-num">{% get_like_count comment %}</span>
-                                        </span>
+                                      f  </span>
                                 </div>
                                 <a href="javascript:reply({{ comment.pk }})">回复</a>
                                 {% for reply in comment.root_comment.all %}

@@ -63,7 +63,6 @@ def get_blog_list_common_date(request, blogs_all_list):
 def blog_list(request):
     blogs_all_list = Blog.objects.all()
     context = get_blog_list_common_date(request, blogs_all_list)
-
     return render(request, 'blog/blog_list.html', context)
 
 

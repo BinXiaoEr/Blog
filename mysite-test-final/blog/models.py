@@ -15,11 +15,10 @@ class Blog(models.Model,ReadNumExpand):
     title = models.CharField(max_length=50)
     blog_type = models.ForeignKey(BlogType, on_delete=models.CASCADE)
     content = MDTextField()
-    read_details=GenericRelation(ReadDetail)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     create_time = models.DateTimeField(auto_now_add=True)
     last_update = models.DateTimeField(auto_now=True)
-
+    read_details = GenericRelation(ReadDetail)
     def get_url(self):
         return reverse('blog:detail',args=[self.pk])
 

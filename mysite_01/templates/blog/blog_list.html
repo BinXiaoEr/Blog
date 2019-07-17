@@ -114,10 +114,10 @@
                     </div>
                     <div class="panel-body">
                         <ul>{# 展示每月博客数量 #}
-                            {% for date,count in blog_dates.items %}
+                            {% for date,count_all in blog_dates.items %}
                                 <li>
                                     <a href="{% url 'blog:blog_with_date' year=date.year month=date.month %}">
-                                        {{ date|date:'Y年m月' }}-{{ count }}篇
+                                        {{ date|date:'Y年m月' }}-{{ count_all }}篇
                                     </a>
                                 </li>
                             {% endfor %}

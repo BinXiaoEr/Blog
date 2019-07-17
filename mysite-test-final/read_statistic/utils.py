@@ -4,10 +4,10 @@ from django.utils import timezone
 from django.db.models import Sum
 from .models import ReadNum, ReadDetail
 from django.db.models import Sum
+
 def read_statistics_once_read(request, obj):
     ct = ContentType.objects.get_for_model(obj)
     key = "%s_%s_read" % (ct.model, obj.pk)
-
     if not request.COOKIES.get(key):
         # 总阅读数 +1
         # 创建或者获取的操作省略了很多 如果有对应字段就获取，没有对应查询就创建

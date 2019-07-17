@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -26,7 +25,6 @@ SECRET_KEY = '_ipx@5*u($f3xc0n-z+_1l%cg)zx%g!x*vq*v(f_$!v81d6vuy'
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-
 
 # Application definition
 
@@ -62,7 +60,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,7 +75,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
@@ -89,13 +86,13 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # }
 
 DATABASES = {
-     'default': {
+    'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'mysite_db',#使用的数据库的名字
-        'USER':'scb',#链接mysql的用户名
-        'PASSWORD':'scb123456',#远程数据设置你这个ip地址允许访问的密码
-        'HOST':'localhost',#指定mysql数据库所在电脑ip
-        'PORT':3306,#电脑端口),
+        'NAME': 'mysite_db',  # 使用的数据库的名字
+        'USER': 'scb',  # 链接mysql的用户名
+        'PASSWORD': 'scb123456',  # 远程数据设置你这个ip地址允许访问的密码
+        'HOST': 'localhost',  # 指定mysql数据库所在电脑ip
+        'PORT': 3306,  # 电脑端口),
     }
 }
 # Password validation
@@ -116,7 +113,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
@@ -130,17 +126,17 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+#收集静态文件
+STATIC_ROOT=os.path.join(BASE_DIR,'static_collected')
+MEDIA_URL = '/media/'  # 你上传的文件和图片会默认存在/uploads/editor下
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')  # uploads必须存在，且在项目目录下
 
-MEDIA_URL = '/media/'   #你上传的文件和图片会默认存在/uploads/editor下
-MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')  #uploads必须存在，且在项目目录下
-
-#ckeditor
+# ckeditor
 CKEDITOR_CONFIGS = {
     'comment_ckeditor': {
         'toolbar': 'custom',
@@ -166,11 +162,50 @@ CACHES = {
         'LOCATION': 'my_cache_table',
     }
 }
-#发送邮件设置
+
+# 发送邮件设置
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 25
+EMAIL_USE_TLS = True  # 与SMTP服务器通信时，是否启动TLS链接(安全链接)
+# 部署在阿里云上要把上面两个进行如下修改
+# EMAIL_PORT = 465 #也要加端口
+# EMAIL_USE_SSL = True
 EMAIL_HOST_USER = '18390210785@163.com'
 EMAIL_HOST_PASSWORD = 'scb1997'  # 授权码
 EMAIL_FROM = 'A_bin的博客<18390210785@163.com>'
-EMAIL_USE_TLS = True  # 与SMTP服务器通信时，是否启动TLS链接(安全链接)
+
+# 管理员
+# ADMINS = (
+#     ('admin', '504397480@qq.com'),
+#     # 错误信息会发送给邮箱
+# )
+#
+# # 日志文件
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'file': {
+#             'level': 'DEBUG',
+#             'class': 'logging.FileHandler',
+#             'filename': 'C:\\Users\\Administrator\\Desktopmysite_debug.log'
+#         },
+#         'mail_admins': {
+#             'level': 'ERROR',
+#             'class': 'django.utils.log.AdminEmailHandler',
+#         }
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['file'],
+#             'level': 'DEBUG',
+#             'propagate': True,
+#         },
+#         'django.request': {
+#             'handlers': ['mail_admins'],
+#             'level': 'ERROR',
+#             'propagate': False,
+#         },
+#     },
+# }

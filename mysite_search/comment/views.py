@@ -11,6 +11,8 @@ def update_comment(request):
         comment=Comment()
         comment.user=comment_form.cleaned_data['user']
         comment.text=comment_form.cleaned_data['text']
+
+
         comment.content_object=comment_form.cleaned_data['content_object']
         parent=comment_form.cleaned_data['parent']
         if not parent is None:

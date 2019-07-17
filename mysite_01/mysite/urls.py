@@ -6,7 +6,7 @@ from django.conf.urls.static import static
 from haystack.views import SearchView
 from .views import *
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin_manage/', admin.site.urls),
     url(r'^comment/', include(('comment.urls', 'comment'), namespace='comment')),
      url(r'^search/', MySearchView(), name='haystack_search'),  # 全文检索
     url(r'^blog/',include(('blog.urls','blog'),namespace='blog')),

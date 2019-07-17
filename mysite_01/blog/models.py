@@ -17,7 +17,7 @@ class Blog(models.Model,ReadNumExpand):
     content = MDTextField()
     read_details=GenericRelation(ReadDetail)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    create_time = models.DateTimeField()
+    create_time = models.DateTimeField(auto_now_add=True)
     last_update = models.DateTimeField(auto_now=True)
 
     def get_url(self):

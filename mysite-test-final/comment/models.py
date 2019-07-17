@@ -27,16 +27,24 @@ class SendMail(threading.Thread):
 
 class Comment(models.Model):
     #contenttype可以关联任意字段
-    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
-    object_id = models.PositiveIntegerField()
-    content_object = GenericForeignKey('content_type', 'object_id')
-    text=models.TextField()
-    comment_time=models.DateTimeField(auto_now=True)
     user=models.ForeignKey(User,related_name='comments',on_delete=models.CASCADE)
     root=models.ForeignKey('self',related_name='root_comment',null=True,on_delete=models.CASCADE)
     parent=models.ForeignKey('self',null=True,related_name='parent_comment',on_delete=models.CASCADE)
     reply_to=models.ForeignKey(User,null=True,related_name='replies',on_delete=models.CASCADE)
 
+    text = models.TextField()
+    comment_time = models.DateTimeField(auto_now=True)
+    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
+    object_id = models.PositiveIntegerField()
+    content_object = GenericForeignKey('content_type', 'object_id')
+
+
+    def __str__(self):
+        return self.text
+    class Meta:
+        ordering=['-comment_time']
+
+    # 发送邮件操作
     def send_mail(self):
         if self.parent is None:
             # 评论我的博客
@@ -53,8 +61,3 @@ class Comment(models.Model):
             text = render(None, 'blog/send_mail.html', context).content.decode('utf-8')
             send_mail = SendMail(subject, text, email)
             send_mail.start()
-
-    def __str__(self):
-        return self.text
-    class Meta:
-        ordering=['-comment_time']

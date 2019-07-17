@@ -34,7 +34,6 @@ def home(request):
     dates, read_nums = get_seven_days_read_data(content_type=blog_content_type)
     today_hot_data = get_today_hot_data(blog_content_type)
     yesterday_hot_data = get_yesterday_hot_data(blog_content_type)
-    # seven_hot_data=get_7_days_hot_blogs()
     # 获取7天热门博客的缓存数据
     hot_blog_for_seven_days = cache.get('hot_blog_for_seven_days')
     if hot_blog_for_seven_days is None:

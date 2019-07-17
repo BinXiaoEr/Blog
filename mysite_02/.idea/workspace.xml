@@ -29,12 +29,39 @@
     <favorites_list name="mysite" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="94" column="7" selection-start-line="94" selection-start-column="7" selection-end-line="94" selection-end-column="7" />
+            <state relative-caret-position="115">
+              <caret line="161" column="43" selection-start-line="161" selection-start-column="43" selection-end-line="161" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#305#1" />
+                <element signature="e#462#524#0" />
+                <element signature="e#879#1194#0" />
+                <element signature="e#1209#1608#0" />
+                <element signature="e#1652#2158#0" />
+                <element signature="e#1658#2155#0" />
+                <element signature="e#1830#2148#0" />
+                <element signature="e#1866#2137#0" />
+                <element signature="e#2206#2216#0" />
+                <element signature="e#2448#2738#0" />
+                <element signature="e#2465#2736#0" />
+                <element signature="e#2739#2760#0" />
+                <element signature="e#2868#3264#0" />
+                <element signature="e#2874#2973#0" />
+                <element signature="e#2979#3068#0" />
+                <element signature="e#3074#3164#0" />
+                <element signature="e#3170#3261#0" />
+                <element signature="e#3266#3288#0" />
+                <element signature="e#3449#3489#0" />
+                <element signature="e#3848#4368#0" />
+                <element signature="e#3874#4365#0" />
+                <element signature="e#3931#4210#0" />
+                <element signature="e#4779#4909#0" />
+                <element signature="e#4796#4907#0" />
+                <element signature="e#5010#5026#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
+            <state relative-caret-position="22">
               <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
             </state>
           </provider>
@@ -153,10 +180,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="75" />
-    <option name="width" value="1209" />
-    <option name="height" value="913" />
+    <option name="width" value="1210" />
+    <option name="height" value="914" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -169,8 +196,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite_02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite_02" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,16 +306,17 @@
       <workItem from="1560128390453" duration="16401000" />
       <workItem from="1560149758310" duration="3441000" />
       <workItem from="1560153515281" duration="89000" />
+      <workItem from="1563331230321" duration="250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157853000" />
+    <option name="totallyTimeSpent" value="158103000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="0" width="967" height="730" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21782178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13605899" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -303,7 +331,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32673267" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51005363" side_tool="true" weight="0.8868458" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.31616595" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4899464" weight="0.63439065" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.4899464" visible="true" weight="0.78783596" />
       <window_info anchor="bottom" id="GraphQL" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -546,6 +574,41 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data.xml" />
+    <entry file="file://$PROJECT_DIR$/data2.json" />
+    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="161" column="43" selection-start-line="161" selection-start-column="43" selection-end-line="161" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#305#1" />
+            <element signature="e#462#524#0" />
+            <element signature="e#879#1194#0" />
+            <element signature="e#1209#1608#0" />
+            <element signature="e#1652#2158#0" />
+            <element signature="e#1658#2155#0" />
+            <element signature="e#1830#2148#0" />
+            <element signature="e#1866#2137#0" />
+            <element signature="e#2206#2216#0" />
+            <element signature="e#2448#2738#0" />
+            <element signature="e#2465#2736#0" />
+            <element signature="e#2739#2760#0" />
+            <element signature="e#2868#3264#0" />
+            <element signature="e#2874#2973#0" />
+            <element signature="e#2979#3068#0" />
+            <element signature="e#3074#3164#0" />
+            <element signature="e#3170#3261#0" />
+            <element signature="e#3266#3288#0" />
+            <element signature="e#3449#3489#0" />
+            <element signature="e#3848#4368#0" />
+            <element signature="e#3874#4365#0" />
+            <element signature="e#3931#4210#0" />
+            <element signature="e#4779#4909#0" />
+            <element signature="e#4796#4907#0" />
+            <element signature="e#5010#5026#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -555,18 +618,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
+        <state relative-caret-position="22">
           <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data2.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="94" column="7" selection-start-line="94" selection-start-column="7" selection-end-line="94" selection-end-column="7" />
         </state>
       </provider>
     </entry>
