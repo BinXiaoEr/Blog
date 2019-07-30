@@ -29,8 +29,8 @@ class ReadDetail(models.Model):
     object_id = models.PositiveIntegerField()
     content_object = GenericForeignKey('content_type', 'object_id')
 
-
 class IpDeatil(models.Model):
-    date = models.DateField(default=timezone.now)
+    date = models.DateTimeField(auto_now_add=True)
     ip=models.CharField(max_length=20,null=True,blank=True)
     id_blog=models.IntegerField(null=True,blank=True)
+

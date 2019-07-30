@@ -29,30 +29,72 @@
     <favorites_list name="mysite" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="94" column="7" selection-start-line="94" selection-start-column="7" selection-end-line="94" selection-end-column="7" />
+            <state relative-caret-position="242">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#305#1" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data.json">
+        <entry file="file://$PROJECT_DIR$/blog/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            <state relative-caret-position="396">
+              <caret line="24" column="57" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/__init__.py">
+        <entry file="file://$PROJECT_DIR$/read_statistic/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+            <state relative-caret-position="550">
+              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/read_statistic/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="32" column="50" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="80" column="63" selection-start-line="80" selection-start-column="63" selection-end-line="80" selection-end-column="63" />
+              <folding>
+                <element signature="e#455#2345#0" />
+                <element signature="e#455#484#0" />
+                <element signature="e#1485#1524#0" />
+                <element signature="e#1579#1634#0" />
+                <element signature="e#1906#2072#0" />
+                <element signature="e#2386#2546#0" />
+                <element signature="e#2593#2874#0" />
+                <element signature="e#2933#3205#0" />
+                <element signature="e#3250#4384#0" />
+                <element signature="e#3383#3503#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,6 +133,7 @@
       <find>{% block script_extends %}</find>
       <find>clearfix</find>
       <find>tip</find>
+      <find>log</find>
     </findStrings>
     <dirStrings>
       <dir>F:\Python\python自学\django\mysite</dir>
@@ -104,9 +147,6 @@
         <option value="$PROJECT_DIR$/templates/blog/blog_with_type.html" />
         <option value="$PROJECT_DIR$/templates/blog/blog_with_date.html" />
         <option value="$PROJECT_DIR$/blog/admin.py" />
-        <option value="$PROJECT_DIR$/read_statistic/admin.py" />
-        <option value="$PROJECT_DIR$/read_statistic/models.py" />
-        <option value="$PROJECT_DIR$/read_statistic/utils.py" />
         <option value="$PROJECT_DIR$/templates/blog/home.html" />
         <option value="$PROJECT_DIR$/static/css/base.css" />
         <option value="$PROJECT_DIR$/comment/migrations/urls.py" />
@@ -150,13 +190,16 @@
         <option value="$PROJECT_DIR$/templates/blog/send_mail.html" />
         <option value="$PROJECT_DIR$/mysite/__init__.py" />
         <option value="$PROJECT_DIR$/mysite/settings.py" />
+        <option value="$PROJECT_DIR$/read_statistic/admin.py" />
+        <option value="$PROJECT_DIR$/read_statistic/models.py" />
+        <option value="$PROJECT_DIR$/read_statistic/utils.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="75" />
-    <option name="width" value="1209" />
-    <option name="height" value="913" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -169,8 +212,23 @@
         <subPane>
           <expand>
             <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite_02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite_02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mysite_02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite_02" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mysite_02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite_02" type="462c0819:PsiDirectoryNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mysite_02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite_02" type="462c0819:PsiDirectoryNode" />
+              <item name="read_statistic" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,16 +337,22 @@
       <workItem from="1560128390453" duration="16401000" />
       <workItem from="1560149758310" duration="3441000" />
       <workItem from="1560153515281" duration="89000" />
+      <workItem from="1563331230321" duration="503000" />
+      <workItem from="1563332250423" duration="657000" />
+      <workItem from="1564034315060" duration="3709000" />
+      <workItem from="1564062243043" duration="69000" />
+      <workItem from="1564109063295" duration="820000" />
+      <workItem from="1564109931804" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157853000" />
+    <option name="totallyTimeSpent" value="163623000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="0" width="967" height="730" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21782178" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15147454" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -303,7 +367,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32673267" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51005363" side_tool="true" weight="0.8868458" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.31616595" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4899464" weight="0.63439065" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4899464" weight="0.6237482" />
       <window_info anchor="bottom" id="GraphQL" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -343,15 +407,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/blogger/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/editor/IMG_0993_20190603105405637247.JPG" />
-    <entry file="file://$PROJECT_DIR$/read_statistic/utils.py" />
     <entry file="file://$PROJECT_DIR$/templates/blog/blog_with_date.html" />
     <entry file="file://$PROJECT_DIR$/templates/blog/blog_with_type.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -441,21 +496,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blooger/models.py" />
-    <entry file="file://$PROJECT_DIR$/read_statistic/views.py" />
     <entry file="file://$PROJECT_DIR$/templates/blog/blog_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-336">
           <caret line="107" column="82" selection-start-line="107" selection-start-column="82" selection-end-line="107" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="106" column="11" selection-start-line="106" selection-start-column="11" selection-end-line="106" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -524,19 +568,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blooger/views.py" />
-    <entry file="file://$PROJECT_DIR$/comment/views.py" />
-    <entry file="file://$PROJECT_DIR$/comment/models.py" />
     <entry file="file://$PROJECT_DIR$/templates/blog/send_mail.html" />
     <entry file="file://$PROJECT_DIR$/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -546,6 +578,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data.xml" />
+    <entry file="file://$PROJECT_DIR$/data2.json" />
+    <entry file="file://$PROJECT_DIR$/mysite/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -553,20 +593,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/__init__.py">
+    <entry file="file://$PROJECT_DIR$/comment/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        <state relative-caret-position="-66" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#202#1618#0" />
+            <element signature="e#327#1375#0" />
+            <element signature="e#624#762#0" />
+            <element signature="e#1394#1478#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data2.json">
+    <entry file="file://$PROJECT_DIR$/read_statistic/views.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_statistic/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="42" selection-end-line="13" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="94" column="7" selection-start-line="94" selection-start-column="7" selection-end-line="94" selection-end-column="7" />
+        <state relative-caret-position="242">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#305#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="24" column="57" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_statistic/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="80" column="63" selection-start-line="80" selection-start-column="63" selection-end-line="80" selection-end-column="63" />
+          <folding>
+            <element signature="e#455#2345#0" />
+            <element signature="e#455#484#0" />
+            <element signature="e#1485#1524#0" />
+            <element signature="e#1579#1634#0" />
+            <element signature="e#1906#2072#0" />
+            <element signature="e#2386#2546#0" />
+            <element signature="e#2593#2874#0" />
+            <element signature="e#2933#3205#0" />
+            <element signature="e#3250#4384#0" />
+            <element signature="e#3383#3503#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_statistic/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="32" column="50" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

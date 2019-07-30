@@ -8,7 +8,7 @@ from .models import IpDeatil
 def read_statistics_once_read(request, obj):
     ct = ContentType.objects.get_for_model(obj)
     key = "%s_%s_read" % (ct.model, obj.pk)
-
+    print(obj.pk)
     if not request.COOKIES.get(key):
         # 总阅读数 +1
         # 创建或者获取的操作省略了很多 如果有对应字段就获取，没有对应查询就创建
@@ -28,6 +28,7 @@ def read_statistics_once_read(request, obj):
             ip = request.META['REMOTE_ADDR']
             print('REMOTE_ADDR:'+ip)
         IpDeatil.objects.get_or_create(ip=ip,id_blog=obj.pk)
+
     return key
 
 def get_seven_days_read_data(content_type):
