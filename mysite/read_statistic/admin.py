@@ -11,4 +11,4 @@ class ReadDetailAdmin(admin.ModelAdmin):
 
 @admin.register(IpDeatil)
 class ReadDetailAdmin(admin.ModelAdmin):
-    list_display = ('date','ip','id_blog')
+    list_display = ('date','ip','id_blog','ip_count')

@@ -31,6 +31,7 @@ class ReadDetail(models.Model):
 
 
 class IpDeatil(models.Model):
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField(auto_now=True)
     ip=models.CharField(max_length=20,null=True,blank=True)
-    id_blog=models.IntegerField(null=True,blank=True)
+    id_blog=models.TextField(null=True,blank=True)
+    ip_count=models.IntegerField(default=0)

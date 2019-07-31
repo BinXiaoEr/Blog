@@ -23,11 +23,31 @@ def read_statistics_once_read(request, obj):
         readDetail.save()
         if 'HTTP_X_FORWARDED_FOR' in request.META:
             ip = request.META['HTTP_X_FORWARDED_FOR']
-            print('HTTP_X_FORWARDED_FOR:'+ip)
+           # print('HTTP_X_FORWARDED_FOR:'+ip)
         else:
             ip = request.META['REMOTE_ADDR']
-            print('REMOTE_ADDR:'+ip)
-        IpDeatil.objects.get_or_create(ip=ip,id_blog=obj.pk)
+           # print('REMOTE_ADDR:'+ip)
+
+        if IpDeatil.objects.filter(ip=ip):
+         #   print(123)
+            ipdeatil=IpDeatil.objects.get(ip=ip)
+            ipdeatil.id_blog+=str(obj.id)+','
+            ipdeatil.ip_count+=1
+            ipdeatil.save()
+        else:
+          #  print(456)
+            today = timezone.now().date()
+            ipdeatil=IpDeatil(date=today,ip=ip,id_blog=str(obj.pk),ip_count=1)
+            ipdeatil.save()
+  #     IpDeatil.objects.get_or_create(ip=ip,id_blog=obj.pk)
+   #     ipdeatil,_=IpDeatil.objects.get_or_create(ip=ip)
+   #     if not  ipdeatil.id_blog:
+   #         ipdeatil.id_blog=str(obj.id)+','
+       # else:
+       #     ipdeatil.id_blog+=str(obj.pk)+','
+       # ipdeatil.ip_count+=1
+        #print(ipdeatil.id_blog)
+       # ipdeatil.save()
     return key
 
 def get_seven_days_read_data(content_type):
