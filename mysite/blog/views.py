@@ -8,20 +8,10 @@ from django.contrib.contenttypes.models import ContentType
 from comment.models import Comment
 from comment.forms import CommentForm
 from blooger.forms import LoginForm
-each_page_blogs_number = 6
+each_page_blogs_number = 12
 
 # 获取分页信息
 def get_blog_list_common_date(request, blogs_all_list):
-      # for blog in blogs_all_list:
-    #     blog.content = markdown.markdown(blog.content.replace("\r\n", '  \n'), extensions=[
-    #         'markdown.extensions.extra',
-    #         'markdown.extensions.codehilite',
-    #         'markdown.extensions.toc',
-    #     ],safe_mode=True,enable_attributes=False)
-    #设置当前文本内容为markdown
-    # 每 each_page_blogs_number页进行分页 对model对象进行分页  
-    #设置当前文本内容为markdown
-    # 每 each_page_blogs_number页进行分页 对model对象进行分页
     paginator = Paginator(blogs_all_list, each_page_blogs_number)
     # 获取页码参数get请求page=?,后面的1是默认
     page_num = request.GET.get('page', 1)
